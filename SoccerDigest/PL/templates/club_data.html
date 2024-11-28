@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <title>
+        football
+    </title>
+    
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <h1> {{info.0.club_name}} </h1>
+    <div class = image-text-container>
+        <img src = "{{info.0.club_crest.url}}"/>
+        <p>{{info.0.club_description}}</p>
+    </div>
+    
+        <h1>Current Schedule</h1>
+        <div class="card-container">
+            {% for games in matches %}
+            <div class="card">
+                <p>League: {{ games.league }}</p>
+                <p>Match Day: {{ games.matchDay }}</p>
+                <p>{{ games.homeTeam }} vs {{ games.awayTeam }}</p>
+                <p>Date: {{ games.date }}</p>
+                <p>Time: {{ games.time }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+    <h1> Current Squad </h1>
+    <table class="styled-table">
+        <tbody>
+            <thead>
+                <tr>
+                    <th>Player name</th>
+                    <th>Nation</th>
+                    <th>Position</th>
+                    <th>Age</th>
+                    <th>Games played</th>
+                    <th>Assists</th>
+                    <th>Yellow Cards</th>
+                    <th>Red Cards</th>
+                    <th>Expected goals</th>
+                    <th>Club name</th>
+                </tr>
+            </thead>
+    {% for player in club %}
+            <tr>
+                <th>{{player.name}}</th>
+                <th>{{player.nation}}</th>
+                <th>{{player.pos}}</th>
+                <th>{{player.age}}</th>
+                <th>{{player.gp}}</th>
+                <th>{{player.ast}}</th>
+                <th>{{player.crd_Y}}</th>
+                <th>{{player.crd_R}}</th>
+                <th>{{player.x_G}}</th>
+                <th>{{player.club_name}}</th>
+            </tr>    
+   {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

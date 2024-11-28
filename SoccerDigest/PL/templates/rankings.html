@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Standings</title>
+    <link rel="stylesheet" href="{% static 'css/ranking.css' %}">
+</head>
+<body>
+    <main>
+        <h1> Premier League LIVE Standings </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Club</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Drawn</th>
+                    <th>Lost</th>
+                    <th>Goal Difference</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pos in standing %}
+                <tr>
+                    <td>{{ pos.Rank }}</td>
+                    <td>{{ pos.Club }}</td>
+                    <td>{{ pos.Played }}</td>
+                    <td>{{ pos.Wins }}</td>
+                    <td>{{ pos.Draws }}</td>
+                    <td>{{ pos.Losses }}</td>
+                    <td>{{ pos.Goal_difference }}</td>
+                    <td>{{ pos.Points }}</td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

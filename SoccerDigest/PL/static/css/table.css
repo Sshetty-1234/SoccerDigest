@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(243, 241, 241);
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #007BFF;
+}
+
+.image-text-container {
+    display: flex; /* Use Flexbox for alignment */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Spacing between image and text */
+    margin: 20px; /* Add some spacing around the container */
+}
+
+.image-text-container img {
+    width: auto; /* Maintain image aspect ratio */
+    height: auto; /* Maintain image aspect ratio */
+    max-height: 100%; /* Prevent the image from exceeding text height */
+    object-fit: contain; /* Ensure proper scaling */
+}
+
+.text-content {
+    text-align: justify; /* Justify the text for readability */
+    font-family: Arial, sans-serif; /* Set font family */
+    line-height: 1.6; /* Improve readability */
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+.image-wrapper {
+    max-width: 300px; /* Set a max width for the image container */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center-align for small screens */
+    }
+
+    .image-wrapper {
+        max-width: 100%; /* Allow the image to scale to full width */
+    }
+}/* Flexbox container for the cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if there are too many cards */
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Align cards to the left */
+    align-items: flex-start; /* Align cards to the top */
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Fixed width for each card */
+    flex: 1 1 calc(25% - 20px); /* Allows up to 4 cards per row, with space between them */
+    min-width: 200px; /* Ensures the cards don't get too small */
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #dddddd;
+    padding: 12px 15px;
+}
+
+.styled-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table td {
+    color: #333;
+}

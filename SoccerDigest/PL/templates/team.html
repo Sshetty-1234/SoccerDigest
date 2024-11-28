@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="/">🏠</a> | 
+        <a href="/standing/">📋</a> | 
+    </nav>
+    <main>
+        {% if clubs %}
+            {% for club in clubs %}
+                {% if club != '0' and club != '1' %}
+                    <div class="card">
+                        <div class="card-content">
+                            <a href="{% url 'team' club%}">{{ club }}</a>
+                        </div>
+                    </div> 
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>No clubs available.</p>
+        {% endif %}
+    </main>
+</body>
+</html>
