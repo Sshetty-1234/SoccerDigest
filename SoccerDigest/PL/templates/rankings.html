@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% load static %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Standings</title>
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    Football
+{% endblock %}
+{% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/ranking.css' %}">
-</head>
-<body>
-    <main>
+{% endblock %} 
+    
+{% block content %}
         <h1> Premier League LIVE Standings </h1>
         <table>
             <thead>
@@ -39,6 +38,4 @@
                 {% endfor %}
             </tbody>
         </table>
-    </main>
-</body>
-</html>
+{% endblock %}

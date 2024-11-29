@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    {% load static %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/table.css' %}">
-    <title>
-        football
-    </title>
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    Football
+{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/table.css' %}"
+{% endblock %}
     
-    <link rel="stylesheet" href="table.css">
-</head>
-<body>
+{% block content %}
     <h1> {{info.0.club_name}} </h1>
     <div class = image-text-container>
         <img src = "{{info.0.club_crest.url}}"/>
@@ -64,5 +61,4 @@
    {% endfor %}
         </tbody>
     </table>
-</body>
-</html>
+{% endblock %}

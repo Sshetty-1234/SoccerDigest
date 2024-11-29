@@ -1,0 +1,35 @@
+
+nav {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: #333; /* Dark background */
+    padding: 10px 0; /* Add some padding */
+    position: fixed; /* Ensure the navbar stays on top */
+    width: 100%; /* Make navbar full width */
+    top: 0;
+    z-index: 10; /* Ensure it overlays other content */
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
+    padding: 10px 15px;
+}
+nav a:hover {
+    background-color: #575757; /* Subtle hover effect */
+    border-radius: 4px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover {
+    opacity: .85;
+}
+h2 {
+    color: green
+}
