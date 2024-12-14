@@ -9,12 +9,14 @@ soup = BeautifulSoup(page.text,"html.parser")
 
 table = soup.find("tbody")
 ranks = []
+count = 1
 for i in range(1,21):
+
     team = table.find("tr", {"data-position":i})
 
     team_name = team.find("a").find("span",class_="league-table__team-name league-table__team-name--long long")
-    pos = team.find("td").find("span",class_="league-table__result-highlight").text.strip()
-
+    #pos = team.find("td").find("span",class_="league-table__result-highlight").text.strip()
+    pos = count
     team_info = team.find_all("td")[2:10]
     team_standing = {
             "Club" : team_name.text,
@@ -29,4 +31,5 @@ for i in range(1,21):
 
     ranks.append(team_standing)
     team_standing = {}
+    count += 1
 
