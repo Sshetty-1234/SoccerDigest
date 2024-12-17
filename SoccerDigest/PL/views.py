@@ -1,7 +1,8 @@
 from django.shortcuts import render, HttpResponse,get_object_or_404
-from .models import Team, club_info, Post, Comment
+from .models import Team, club_info
 import requests
 from .rankings import ranks
+from .NewsScrapers.summarize import response as ans
 from datetime import date,timedelta
 import os
 
@@ -9,7 +10,6 @@ import os
 today = date.today()
 future_date = today + timedelta(days=14)
 
-# Make sure to delete it
 
 
 # Create your views here.
@@ -30,9 +30,9 @@ def team_info(request,name):
 
 def rankings(request):
     return render(request,"rankings.html",{"standing":ranks})
-
+# ans = "blah blah"
 def summary(request):
-    return HttpResponse("This is the summary")
+    return HttpResponse(f"{ans}")
 
 def match_info(id: int):
     header = {
