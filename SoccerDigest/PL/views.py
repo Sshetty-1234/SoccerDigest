@@ -3,12 +3,12 @@ from .models import Team, club_info, Post, Comment
 import requests
 from .rankings import ranks
 from datetime import date,timedelta
+import os
 
 
 today = date.today()
 future_date = today + timedelta(days=14)
 
-API_KEY = '15cd8b6230734db5ba0f5f6fe511616f'
 # Make sure to delete it
 
 
@@ -31,9 +31,12 @@ def team_info(request,name):
 def rankings(request):
     return render(request,"rankings.html",{"standing":ranks})
 
+def summary(request):
+    return HttpResponse("This is the summary")
+
 def match_info(id: int):
     header = {
-    'X-Auth-Token': API_KEY
+    'X-Auth-Token': os.getenv("FOOTBALL_DATA_API_KEY")
     }
     result = "nothing to display"
     BASE_URL = "https://api.football-data.org/v4/"
@@ -64,27 +67,3 @@ def match_info(id: int):
             
     return games
 
-def blog_index(request):
-    posts = Post.objects.all().order_by("-created_on")
-    context = {"posts": posts}
-    return render(request, "index.html", context)
-
-def blog_category(request, category):
-    posts = Post.objects.filter(
-        categories__name__contains=category
-    ).order_by("-created_on")
-    context = {
-        "category": category,
-        "posts": posts,
-    }
-    return render(request, "category.html", context)
-
-def blog_detail(request, pk):
-    post = Post.objects.get(pk=pk)
-    comments = Comment.objects.filter(post=post)
-    context = {
-        "post": post,
-        "comments": comments,
-    }
-
-    return render(request, "detail.html", context)
