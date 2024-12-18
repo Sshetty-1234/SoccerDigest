@@ -2,10 +2,10 @@ from django.shortcuts import render, HttpResponse,get_object_or_404
 from .models import Team, club_info, soccer_buddy
 import requests
 from .rankings import ranks
-#from .NewsScrapers.summarize import response as ans
+from .NewsScrapers.summarize import response as ans
 from datetime import date,timedelta
 import os
-ans = "blah blah"
+
 
 today = date.today()
 future_date = today + timedelta(days=14)
@@ -24,11 +24,11 @@ def soccer(request):
 
 def team_info(request,name):
     desired_club = Team.objects.filter(club_name = name)
-    #club_stuff = club_info.objects.filter(club_name = name)
-    #id = club_stuff[0].club_id
-    #matches = match_info(id)
-    #return render(request, "club_data.html",{"club":desired_club,"matches":matches,"info":club_stuff})
-    return render(request, "club_data.html",{"club":desired_club})
+    club_stuff = club_info.objects.filter(club_name = name)
+    id = club_stuff[0].club_id
+    matches = match_info(id)
+    return render(request, "club_data.html",{"club":desired_club,"matches":matches,"info":club_stuff})
+    #return render(request, "club_data.html",{"club":desired_club})
 
 def rankings(request):
     return render(request,"rankings.html",{"standing":ranks})
