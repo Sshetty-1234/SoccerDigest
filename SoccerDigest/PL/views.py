@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse,get_object_or_404
-from .models import Team, club_info
+from .models import Team, club_info, soccer_buddy
 import requests
 from .rankings import ranks
 from .NewsScrapers.summarize import response as ans
@@ -19,7 +19,8 @@ def check(request):
 
 def soccer(request):
     all_clubs = Team.objects.all().values_list('club_name', flat=True).distinct()
-    return render(request,"team.html",{"clubs":all_clubs})
+    icon = soccer_buddy.objects.first()
+    return render(request,"team.html",{"clubs":all_clubs,"soccer_buddy":icon,"news_info":ans})
 
 def team_info(request,name):
     desired_club = Team.objects.filter(club_name = name)
@@ -30,7 +31,7 @@ def team_info(request,name):
 
 def rankings(request):
     return render(request,"rankings.html",{"standing":ranks})
-# ans = "blah blah"
+
 def summary(request):
     return HttpResponse(f"{ans}")
 

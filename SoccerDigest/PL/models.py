@@ -25,6 +25,13 @@ class club_info(models.Model):
     def __str__(self):
         return f'{self.club_name} ({self.club_crest})'
     
+class soccer_buddy(models.Model):
+    image = models.ImageField(default="nothing",blank=True)  
+    description = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.description
+    
 class Category(models.Model):
     name = models.CharField(max_length=30)
     

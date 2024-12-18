@@ -5,7 +5,7 @@ body, main {
     align-items: center;     /* Center vertically */
     height: 100vh;           /* Full viewport height */
     margin: 0;               /* Remove default body margin */
-    background-color: #f0f0f0; /* Soft light gray background */
+    background-color:white; /* Soft light gray background */
 }
 /* Vertical Card Layout */
 .card {
@@ -118,4 +118,51 @@ a:hover {
 }
 h2 {
     color: green
+}
+.content-container {
+    display: flex; 
+    flex-direction: column; /* Aligns title on top and content below */
+    gap: 20px; /* Spacing between title and content */
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    margin-top: 10%; 
+    border-color: black;
+    border-style: groove;
+    border-width: 2pc;
+    background-color: white;
+}
+
+/* Title styling */
+.content-container h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; /* Center the title */
+    font-size: 24px; 
+    margin: 0; /* Remove default margin */
+    color: black
+}
+.image-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    width: 100%; /* Full width */
+}
+/* Sub-container for image and text */
+.content-flex {
+    display: flex; /* Align image and text side by side */
+    align-items: center; /* Vertically align image and text */
+    justify-content: flex-start; /* Align to the left */
+    gap: 20px; /* Space between image and text */
+}
+
+/* Soccer Buddy image styling */
+.soccer-buddy-img {
+    width: 250px; 
+    height: auto; 
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    align-items: center;
 }

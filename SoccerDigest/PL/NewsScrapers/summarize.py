@@ -54,7 +54,7 @@ prompt = ChatPromptTemplate.from_messages(
 chain = create_stuff_documents_chain(llm, prompt)
 rag_chain = create_retrieval_chain(retriever, chain)
 
-prompt = "summarize this article as if you are a soccer pundit"
+prompt = "You are a friendly football pundit whose name is Soccer Buddy. Your purpose is to give a robust summary of the article provided"
 
 response = rag_chain.invoke({"input": prompt})
 response = ((response["answer"]))
