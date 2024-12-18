@@ -9,13 +9,13 @@
 {% endblock %}
     
 {% block content %}
-    <h1> {{info.0.club_name}} </h1>
+    {% comment %} <h1> {{info.0.club_name}} </h1>
     <div class = image-text-container>
         <img src = "{{info.0.club_crest.url}}"/>
         <p>{{info.0.club_description}}</p>
-    </div>
+    </div> {% endcomment %}
     
-        <h1>Current Schedule</h1>
+        {% comment %} <h1>Current Schedule</h1>
         <div class="card-container">
             {% for games in matches %}
             <div class="card">
@@ -26,7 +26,7 @@
                 <p>Time: {{ games.time }}</p>
             </div>
             {% endfor %}
-        </div>
+        </div> {% endcomment %}
 
     <h1> Current Squad </h1>
     <table class="styled-table">

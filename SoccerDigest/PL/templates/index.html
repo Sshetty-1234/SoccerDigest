@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    Football
+{% endblock %}
+
+{% block content %}
+    <table>
+        <tbody>
+            <thead>
+                <tr>
+                    <th>Player name</th>
+                    <th>Nation</th>
+                    <th>Position</th>
+                    <th>Age</th>
+                    <th>Games played</th>
+                    <th>Assists</th>
+                    <th>Yellow Cards</th>
+                    <th>Red Cards</th>
+                    <th>Expected goals</th>
+                    <th>Club name</th>
+                </tr>
+            </thead>
+    {% for player in club %}
+            <tr>
+                <th>{{player.name}}</th>
+                <th>{{player.nation}}</th>
+                <th>{{player.pos}}</th>
+                <th>{{player.age}}</th>
+                <th>{{player.gp}}</th>
+                <th>{{player.ast}}</th>
+                <th>{{player.crd_Y}}</th>
+                <th>{{player.crd_R}}</th>
+                <th>{{player.x_G}}</th>
+                <th>{{player.club_name}}</th>
+            </tr>    
+   {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

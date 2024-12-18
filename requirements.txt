@@ -10,3 +10,4 @@ langchain-google-genai
 pypdf2
 langchain_chroma
 langchain_community
+fpdf

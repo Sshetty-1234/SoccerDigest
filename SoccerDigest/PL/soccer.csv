@@ -1,0 +1,147 @@
+Name,Nation,Pos,Age,MP,Games Played,Gls,Ast,CrdY,CrdR,xG,Club
+André Onana,CMR,GK,28,16,16,0,0,0,0,0.00,Manchester United
+Diogo Dalot,POR,DF,25,16,16,0,1,3,0,0.05,Manchester United
+Bruno Fernandes,POR,"MF,FW",30,16,16,4,5,1,1,0.38,Manchester United
+Noussair Mazraoui,MAR,DF,27,16,14,0,1,1,0,0.02,Manchester United
+Lisandro Martínez,ARG,DF,26,13,13,0,1,5,0,0.07,Manchester United
+Matthijs de Ligt,NED,DF,25,16,13,1,0,2,0,0.10,Manchester United
+Marcus Rashford, ENG,"FW,MF",27,15,12,4,1,2,0,0.16,Manchester United
+Alejandro Garnacho,ARG,"FW,MF",20,15,10,3,1,1,0,0.38,Manchester United
+Amad Diallo,CIV,"FW,DF",22,14,9,2,6,2,0,0.20,Manchester United
+Kobbie Mainoo, ENG,MF,19,10,9,0,0,5,0,0.03,Manchester United
+Casemiro,BRA,MF,32,12,9,1,0,1,0,0.11,Manchester United
+Rasmus Højlund,DEN,FW,21,11,8,2,0,1,0,0.24,Manchester United
+Manuel Ugarte Ribeiro,URU,MF,23,11,6,0,0,3,0,0.01,Manchester United
+Christian Eriksen,DEN,MF,32,9,6,0,0,2,0,0.02,Manchester United
+Joshua Zirkzee,NED,"FW,MF",23,16,5,3,1,1,0,0.44,Manchester United
+Harry Maguire, ENG,DF,31,9,5,0,0,4,0,0.01,Manchester United
+Mason Mount, ENG,"MF,FW",25,8,4,0,0,2,0,0.14,Manchester United
+Jonny Evans, NIR,DF,36,6,3,0,0,1,0,0.03,Manchester United
+Leny Yoro,FRA,DF,19,3,1,0,0,0,0,0.00,Manchester United
+Tyrell Malacia,NED,DF,25,1,1,0,0,1,0,0.00,Manchester United
+Luke Shaw, ENG,DF,29,2,0,0,0,0,0,0.00,Manchester United
+Victor Lindelöf,SWE,"DF,MF",30,5,0,0,0,1,0,0.00,Manchester United
+Antony,BRA,"FW,MF",24,4,0,0,0,0,0,0.38,Manchester United
+Toby Collyer, ENG,MF,20,1,0,0,0,0,0,0.00,Manchester United
+Scott McTominay, SCO,MF,28,2,0,0,0,0,0,0.33,Manchester United
+Harry Amass, ENG,DF,17,0,0,,,,,,Manchester United
+Altay Bayındır,TUR,GK,26,0,0,,,,,,Manchester United
+Jayce Fitzgerald, ENG,MF,17,0,0,,,,,,Manchester United
+Jack Fletcher, ENG,MF,17,0,0,,,,,,Manchester United
+Tom Heaton, ENG,GK,38,0,0,,,,,,Manchester United
+Godwill Kukonki, ENG,DF,16,0,0,,,,,,Manchester United
+Ethan Wheatley, ENG,FW,18,0,0,,,,,,Manchester United
+Destiny Udogie,ITA,DF,22,16,16,0,1,2,0,0.02,Tottenham Hotspur
+Pedro Porro,ESP,DF,25,16,14,2,2,2,0,0.08,Tottenham Hotspur
+Dejan Kulusevski,SWE,"MF,FW",24,16,14,4,3,3,0,0.15,Tottenham Hotspur
+Brennan Johnson, WAL,FW,23,16,13,6,1,3,0,0.54,Tottenham Hotspur
+Dominic Solanke, ENG,FW,27,13,13,5,2,0,0,0.55,Tottenham Hotspur
+James Maddison, ENG,MF,28,16,13,7,4,3,0,0.40,Tottenham Hotspur
+Guglielmo Vicario,ITA,GK,28,12,12,0,0,1,0,0.00,Tottenham Hotspur
+Son Heung-min,KOR,FW,32,13,12,5,6,0,0,0.32,Tottenham Hotspur
+Cristian Romero,ARG,DF,26,12,12,1,0,1,0,0.10,Tottenham Hotspur
+Pape Matar Sarr,SEN,MF,22,16,9,1,2,3,0,0.16,Tottenham Hotspur
+Micky van de Ven,NED,DF,23,9,9,0,2,4,0,0.04,Tottenham Hotspur
+Yves Bissouma,MLI,MF,28,12,8,2,0,5,0,0.04,Tottenham Hotspur
+Radu Drăgușin,ROU,DF,22,9,7,0,0,0,0,0.01,Tottenham Hotspur
+Rodrigo Bentancur,URU,MF,27,10,7,1,0,4,0,0.11,Tottenham Hotspur
+Fraser Forster, ENG,GK,36,4,4,0,0,0,0,0.00,Tottenham Hotspur
+Timo Werner,GER,"FW,MF",28,13,3,0,3,0,0,0.22,Tottenham Hotspur
+Ben Davies, WAL,DF,31,4,3,0,0,1,0,0.00,Tottenham Hotspur
+Archie Gray, ENG,"DF,MF",18,9,2,0,0,0,0,0.01,Tottenham Hotspur
+Wilson Odobert,FRA,FW,20,3,2,0,0,0,0,0.23,Tottenham Hotspur
+Lucas Bergvall,SWE,MF,18,10,1,0,0,1,0,0.04,Tottenham Hotspur
+Djed Spence, ENG,DF,24,5,1,0,1,1,0,0.04,Tottenham Hotspur
+Mikey Moore, ENG,FW,17,4,1,0,0,0,0,0.04,Tottenham Hotspur
+Richarlison,BRA,FW,27,5,0,0,1,1,0,0.19,Tottenham Hotspur
+Alfie Dorrington, ENG,DF,19,1,0,0,0,0,0,0.00,Tottenham Hotspur
+Will Lankshear, ENG,FW,19,2,0,0,0,0,0,0.00,Tottenham Hotspur
+Brandon Austin, ENG,GK,25,0,0,,,,,,Tottenham Hotspur
+Alfie Devine, ENG,MF,20,0,0,,,,,,Tottenham Hotspur
+Malachi Hardy, ENG,DF,16,0,0,,,,,,Tottenham Hotspur
+Maeson King, ENG,DF,19,0,0,,,,,,Tottenham Hotspur
+Callum Olusesi, ENG,MF,17,0,0,,,,,,Tottenham Hotspur
+Sergio Reguilón,ESP,"DF,MF",28,0,0,,,,,,Tottenham Hotspur
+Luca Williams Barnett, ENG,FW,16,0,0,,,,,,Tottenham Hotspur
+Bernd Leno,GER,GK,32,16,16,0,1,2,0,0.00,Fulham
+Antonee Robinson,USA,DF,27,16,16,0,6,3,0,0.02,Fulham
+Alex Iwobi,NGA,FW,28,16,16,5,3,1,0,0.15,Fulham
+Calvin Bassey,NGA,DF,24,15,15,0,0,5,0,0.02,Fulham
+Kenny Tete,NED,DF,29,15,15,0,2,3,0,0.07,Fulham
+Emile Smith Rowe, ENG,MF,24,16,14,3,2,1,0,0.18,Fulham
+Andreas Pereira,BRA,MF,28,15,13,2,0,5,0,0.25,Fulham
+Raúl Jiménez,MEX,FW,33,16,12,5,2,1,0,0.46,Fulham
+Saša Lukić,SRB,MF,28,11,11,0,0,6,0,0.00,Fulham
+Adama Traoré,ESP,"FW,MF",28,15,10,1,3,2,0,0.31,Fulham
+Sander Berge,NOR,MF,26,13,9,0,0,2,0,0.01,Fulham
+Issa Diop,FRA,DF,27,11,8,0,0,2,0,0.06,Fulham
+Joachim Andersen,DEN,DF,28,8,8,0,0,0,1,0.03,Fulham
+Reiss Nelson, ENG,FW,25,11,5,1,1,1,0,0.20,Fulham
+Rodrigo Muniz,BRA,FW,23,15,4,2,1,1,0,0.36,Fulham
+Harry Wilson, WAL,"FW,MF",27,12,2,3,0,2,0,0.40,Fulham
+Timothy Castagne,BEL,DF,29,6,1,0,0,0,0,0.03,Fulham
+Jorge Cuenca,ESP,DF,25,4,1,0,0,0,0,0.00,Fulham
+Tom Cairney, SCO,MF,33,10,0,1,0,2,1,0.02,Fulham
+Harrison Reed, ENG,MF,29,8,0,0,0,2,0,0.02,Fulham
+Joshua King, ENG,MF,17,1,0,0,0,0,0,0.00,Fulham
+Ryan Sessegnon, ENG,MF,24,1,0,0,0,0,0,0.00,Fulham
+Jay Stansfield, ENG,MF,22,1,0,0,0,0,0,0.00,Fulham
+Samuel Amissah, ENG,DF,17,0,0,,,,,,Fulham
+Steven Benda,GER,GK,26,0,0,,,,,,Fulham
+Martial Godo, ENG,MF,21,0,0,,,,,,Fulham
+Carlos Vinícius,BRA,FW,29,0,0,,,,,,Fulham
+Nathan Collins,IRL,DF,23,16,16,2,1,2,0,0.12,Brentford
+Mark Flekken,NED,GK,31,16,16,0,1,1,0,0.00,Brentford
+Ethan Pinnock,JAM,DF,31,16,16,2,0,2,0,0.05,Brentford
+Bryan Mbeumo,CMR,FW,25,16,16,10,2,2,0,0.30,Brentford
+Keane Lewis-Potter, ENG,"DF,FW",23,16,14,0,1,3,0,0.07,Brentford
+Sepp van den Berg,NED,DF,22,14,13,0,0,1,0,0.05,Brentford
+Vitaly Janelt,GER,MF,26,15,13,1,3,2,0,0.04,Brentford
+Mikkel Damsgaard,DEN,"MF,FW",24,16,13,2,4,0,0,0.12,Brentford
+Christian Nørgaard,DEN,MF,30,13,13,1,2,2,1,0.14,Brentford
+Yoane Wissa,COD,FW,28,13,12,9,1,1,0,0.59,Brentford
+Kristoffer Ajer,NOR,DF,26,9,8,0,0,3,0,0.04,Brentford
+Kevin Schade,GER,"FW,MF",23,16,7,4,2,2,0,0.46,Brentford
+Mathias Jensen,DEN,MF,28,8,6,0,1,1,0,0.04,Brentford
+Mads Roerslev,DEN,DF,25,12,5,0,1,1,0,0.00,Brentford
+Yehor Yarmoliuk,UKR,MF,20,12,4,0,0,1,0,0.09,Brentford
+Fabio Carvalho,POR,"FW,MF",22,15,3,1,1,1,0,0.46,Brentford
+Thiago,BRA,FW,23,4,1,0,0,0,0,0.07,Brentford
+Edmond-Paris Maghoma, ENG,MF,23,2,0,0,0,0,0,0.00,Brentford
+Frank Onyeka,NGA,MF,26,2,0,0,0,0,0,0.00,Brentford
+Yunus Emre Konak,TUR,"MF,FW",18,4,0,0,0,0,0,0.69,Brentford
+Ben Mee, ENG,"DF,MF",35,3,0,0,0,0,0,0.00,Brentford
+Jayden Meghoma, ENG,DF,18,1,0,0,0,0,0,0.00,Brentford
+Ryan Trevitt, ENG,MF,21,1,0,0,0,0,0,0.00,Brentford
+Kim Jisoo,KOR,DF,19,0,0,,,,,,Brentford
+Myles Peart-Harris, ENG,MF,22,0,0,,,,,,Brentford
+Hákon Rafn Valdimarsson,ISL,GK,23,0,0,,,,,,Brentford
+Tony Yogane, ENG,MF,19,0,0,,,,,,Brentford
+Max Kilman, ENG,DF,27,16,16,0,1,3,0,0.09,West Ham United
+Jarrod Bowen, ENG,"FW,MF",27,16,16,4,4,1,0,0.20,West Ham United
+Aaron Wan-Bissaka, ENG,DF,27,15,14,2,0,0,0,0.05,West Ham United
+Emerson Palmieri,ITA,DF,30,15,14,1,1,5,0,0.09,West Ham United
+Lucas Paquetá,BRA,MF,27,16,13,3,0,4,0,0.27,West Ham United
+Tomáš Souček,CZE,MF,29,15,12,4,0,4,0,0.23,West Ham United
+Mohammed Kudus,GHA,"MF,FW",24,11,11,2,1,0,1,0.31,West Ham United
+Michail Antonio,JAM,FW,34,14,11,1,1,1,0,0.24,West Ham United
+Guido Rodríguez,ARG,MF,30,14,11,0,0,4,0,0.02,West Ham United
+Konstantinos Mavropanos,GRE,DF,27,13,10,0,0,1,0,0.09,West Ham United
+Łukasz Fabiański,POL,GK,39,9,8,0,0,2,0,0.00,West Ham United
+Edson Álvarez,MEX,MF,27,12,8,0,0,6,1,0.01,West Ham United
+Alphonse Areola,FRA,GK,31,8,8,0,0,0,0,0.00,West Ham United
+Jean-Clair Todibo,FRA,DF,24,11,7,0,0,0,0,0.01,West Ham United
+Carlos Soler,ESP,MF,27,13,6,0,1,5,0,0.11,West Ham United
+Crysencio Summerville,NED,"FW,MF",23,15,6,1,1,2,0,0.19,West Ham United
+Vladimír Coufal,CZE,DF,32,9,4,0,0,2,0,0.05,West Ham United
+Danny Ings, ENG,FW,32,9,1,1,1,0,0,1.03,West Ham United
+Niclas Füllkrug,GER,FW,31,5,0,1,0,0,0,0.61,West Ham United
+Andy Irving, SCO,MF,24,5,0,0,0,1,0,0.06,West Ham United
+Aaron Cresswell, ENG,DF,35,5,0,0,0,1,0,0.10,West Ham United
+James Ward-Prowse, ENG,MF,30,1,0,0,0,0,0,0.00,West Ham United
+Oliver Scarles, ENG,DF,19,1,0,0,0,0,0,0.00,West Ham United
+Luis Guilherme,BRA,MF,18,2,0,0,0,0,0,0.00,West Ham United
+Kaelan Casey, ENG,DF,20,1,0,0,0,0,0,0.00,West Ham United
+Wes Foderingham, ENG,GK,33,0,0,,,,,,West Ham United
+Ezra Mayers,BRB,DF,17,0,0,,,,,,West Ham United
+Lewis Orford, ENG,MF,18,0,0,,,,,,West Ham United
