@@ -39,8 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'PL',
-    'django_extensions'
+    'django_extensions',
+    "chatbotapp",
 ]
+GENERATIVE_AI_KEY = "AIzaSyAgqi3PgAlJIVIuMOyRlPYfQc2hD4zKl3g"
+
+if not GENERATIVE_AI_KEY:
+    raise ValueError('GENERATIVE_AI_KEY environment variable not set')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

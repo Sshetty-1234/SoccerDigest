@@ -7,7 +7,8 @@ Pillow
 langchain
 python-dotenv
 langchain-google-genai
-pypdf2
+pypdf
 langchain_chroma
 langchain_community
 fpdf
+google-generativeai

@@ -7,6 +7,7 @@ from datetime import date,timedelta
 import os
 
 
+
 today = date.today()
 future_date = today + timedelta(days=14)
 

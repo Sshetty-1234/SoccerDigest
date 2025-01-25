@@ -7,7 +7,11 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
-from .Combine import file_path
+import datetime
+
+current_date = datetime.date.today()
+
+file_path = f"/Users/sohamshetty/Desktop/SoccerDigest/SoccerDigest/PL/NewsScrapers/scraper_data/Report_2024-12-17.pdf"
 
 # Loading up the documents
 loader = PyPDFLoader(f"{file_path}")  # Load your PDF file
@@ -59,4 +63,4 @@ prompt = "You are a friendly football pundit whose name is Soccer Buddy. Your pu
 response = rag_chain.invoke({"input": prompt})
 response = ((response["answer"]))
 
-print(response)
+
