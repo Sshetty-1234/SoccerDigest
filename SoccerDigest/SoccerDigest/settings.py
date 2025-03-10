@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'PL',
     'django_extensions',
-    "chatbotapp",
 ]
 GENERATIVE_AI_KEY = "AIzaSyAgqi3PgAlJIVIuMOyRlPYfQc2hD4zKl3g"
 

@@ -22,8 +22,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('PL.urls')),
-    path('chatbot/', include('chatbotapp.urls')), # Include the chatbot app's URL patterns
-
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

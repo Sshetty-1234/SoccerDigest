@@ -39,10 +39,16 @@ def testing(request):
     return render(request,"index.html",{"club":club_name})
 
 def match_info(id: int):
-    header = {
-    'X-Auth-Token': os.getenv("FOOTBALL_DATA_API_KEY")
+    # header = {
+    # 'X-Auth-Token': os.getenv("FOOTBALL_DATA_API_KEY")
+    # }
+    header ={
+        'X-Auth-Token': '2b24fe9754c54bac8868b6f567124c5e'
     }
-    result = "nothing to display"
+    # idk why but i had to delete the restart the api key account
+    # for the api to work again. not sure if it was account ran out of credits
+    # to fix it simply just made a new account
+    # and checked with api_test.py
     BASE_URL = "https://api.football-data.org/v4/"
     response = requests.get(f"{BASE_URL}teams/{id}/matches?dateFrom={today}&dateTo={future_date}", headers=header)
     data = response.json()
@@ -68,6 +74,5 @@ def match_info(id: int):
                 match = {}
             except IndexError as e:
                 break
-            
     return games
 
