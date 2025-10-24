@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    Football
+{% endblock %}
+
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+                <th>Player name</th>
+                <th>Team</th>
+                <th>Nation</th>
+                <th>Position</th>
+                <th>Age</th>
+                <th>Minutes</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Penalty Shoot on Goal</th>
+                <th>Penalty Shoot</th>
+                <th>Total Shoot</th>
+                <th>Shoot on Target</th>
+                <th>Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Touches</th>
+                <th>Dribbles</th>
+                <th>Tackles</th>
+                <th>Blocks</th>
+                <th>Expected Goals (xG)</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for player in club %}
+            <tr>
+                <td>{{ player.player }}</td>
+                <td>{{ player.team }}</td>
+                <td>{{ player.nation }}</td>
+                <td>{{ player.position }}</td>
+                <td>{{ player.age }}</td>
+                <td>{{ player.minutes }}</td>
+                <td>{{ player.goals }}</td>
+                <td>{{ player.assists }}</td>
+                <td>{{ player.penalty_shoot_on_goal }}</td>
+                <td>{{ player.penalty_shoot }}</td>
+                <td>{{ player.total_shoot }}</td>
+                <td>{{ player.shoot_on_target }}</td>
+                <td>{{ player.yellow_cards }}</td>
+                <td>{{ player.red_cards }}</td>
+                <td>{{ player.touches }}</td>
+                <td>{{ player.dribbles }}</td>
+                <td>{{ player.tackles }}</td>
+                <td>{{ player.blocks }}</td>
+                <td>{{ player.expected_goals_xg }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

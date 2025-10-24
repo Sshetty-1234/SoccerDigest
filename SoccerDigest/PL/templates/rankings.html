@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    Football
+{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/ranking.css' %}">
+{% endblock %} 
+    
+{% block content %}
+    <h1> Premier League LIVE Standings </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Club</th>
+                <th>Played</th>
+                <th>Won</th>
+                <th>Drawn</th>
+                <th>Lost</th>
+                <th>Goal Difference</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pos in standing %}
+            <tr>
+                <td>{{ pos.rank }}</td>
+                <td>{{ pos.club }}</td>
+                <td>{{ pos.played }}</td>
+                <td>{{ pos.wins }}</td>
+                <td>{{ pos.draws }}</td>
+                <td>{{ pos.losses }}</td>
+                <td>{{ pos.goal_difference }}</td>
+                <td>{{ pos.points }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

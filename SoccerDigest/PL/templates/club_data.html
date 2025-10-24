@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    ⚽️ Football
+{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+{% endblock %}
+    
+{% block content %}
+<h1> {{info.0.club_name}} </h1>
+<div class="image-text-container">
+    <img src="{{ info.0.club_crest.url }}" alt="{{ info.0.club_name }}">
+    <div class="text-content">
+        <p>{{ info.0.club_description }}</p>
+    </div>
+</div>
+
+
+    <h1>Current Schedule</h1>
+    <div class="card-container">
+        {% if matches %}
+            {% for game in matches %}
+            <div class="card">
+                <p>League: {{ game.league }}</p>
+                <p>Match Day: {{ game.matchDay }}</p>
+                <p>{{ game.homeTeam }} vs {{ game.awayTeam }}</p>
+                <p>Date: {{ game.date }}</p>
+                <p>Time: {{ game.time }}</p>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p>No upcoming matches.</p>
+        {% endif %}
+    </div>
+
+    <h1> Current Squad </h1>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Player Name</th>
+                <th>Nation</th>
+                <th>Position</th>
+                <th>Age</th>
+                <th>Minutes</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Yellow Cards</th>
+                <th>Red Cards</th>
+                <th>Expected Goals</th>
+                <th>Club Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in club %}
+            <tr>
+                <td>{{ player.player }}</td>
+                <td>{{ player.nation }}</td>
+                <td>{{ player.position }}</td>
+                <td>{{ player.age }}</td>
+                <td>{{ player.minutes }}</td>
+                <td>{{ player.goals }}</td>
+                <td>{{ player.assists }}</td>
+                <td>{{ player.yellow_cards }}</td>
+                <td>{{ player.red_cards }}</td>
+                <td>{{ player.expected_goals_xg }}</td>
+                <td>{{ player.team }}</td>
+            </tr>    
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

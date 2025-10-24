@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends 'layout.html' %}
+{% load static %}
+{% block title %}
+    Football
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/team.css' %}">
+{% endblock %}
+    
+{% block content %}
+
+    <div class="content-container">
+        
+        <h2> Daily Football news by Soccer Buddy</h2>
+        <div class = "image-container" >
+        <img src = {{soccer_buddy.image.url}} class="soccer-buddy-img"/>
+        </div>
+        <p> {{news_info}} </p> 
+    </div>
+        {% if clubs %}
+            {% for club in clubs %}
+                {% if club != '0' and club != '1' %}
+                    <div class="card">
+                        <div class="card-content">
+                            <a href="{% url 'team' club%}">{{ club }}</a>
+                        </div>
+                    </div> 
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>No clubs available.</p>
+        {% endif %}
+{% endblock %}
