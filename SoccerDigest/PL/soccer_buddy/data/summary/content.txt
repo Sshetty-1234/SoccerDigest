@@ -1,9 +1,1 @@
-Hello there, football fans. It's your buddy Soccer Buddy here. I've got a triple-header for you today, folks.
-
-First off, we've got Cristiano Ronaldo, the Portuguese superstar, celebrating a major title win with his national team. He's been playing in Riyadh for his fourth season and is over the moon with the achievement. Ronaldo says it's a special feeling to win for his country and that he'd do anything to help the team succeed, even if it meant putting his own body on the line.
-
-Moving on, Liverpool's Virgil Van Dijk has been praised for his leadership skills after delivering a message to his teammates following a tough run of losses. The Reds responded by beating Eintracht Frankfurt 5-1 in the Champions League, and Van Dijk says it's all about staying calm and focused under pressure.
-
-And finally, we've got some exciting news from the Premier League. Manchester City's Erling Haaland has been in phenomenal form, and a United legend is warning Arsenal that they should be fearful of the Norwegian striker as the title race heats up. Haaland is having one of the greatest individual seasons of all time, and it's no wonder that he's got everyone talking.
-
-That's the latest from the world of football, folks. Stay tuned for more updates, and let's keep the beautiful game alive!
+ERROR: The summary could not be generated during deployment. Check logs.

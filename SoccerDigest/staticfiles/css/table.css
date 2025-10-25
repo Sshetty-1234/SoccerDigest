@@ -1,0 +1,150 @@
+/* ---------------------- Global Styles ---------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(243, 241, 241);
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+}
+
+a {
+    text-decoration: none;
+    color: #81dbb8;
+}
+
+a:hover {
+    opacity: .85;
+}
+
+/* ---------------------- Navbar ---------------------- */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* ---------------------- Image & Text Section ---------------------- */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 80%;
+    text-align: left;
+}
+
+.image-text-container img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.text-content {
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.image-wrapper {
+    max-width: 300px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-wrapper {
+        max-width: 100%;
+    }
+}
+
+/* ---------------------- Table ---------------------- */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    border: 1px solid #dddddd;
+    padding: 12px 15px;
+}
+
+.styled-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table td {
+    color: #333;
+}
+
+/* ---------------------- Cards for Schedule ---------------------- */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 450px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    margin: 5px 0;
+}
