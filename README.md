@@ -1,49 +1,41 @@
 ⚽ Soccer Digest
 
-Soccer Digest is a Django-based web application that provides up-to-date information about Premier League teams, player squads, and live rankings. It combines a traditional relational database with cutting-edge Retrieval-Augmented Generation (RAG) techniques to deliver insightful, AI-generated summaries of current soccer events.
+Soccer Digest is a Django-based web application that provides up-to-date information about Premier League teams, player squads, and live rankings. It combines a traditional SQLite database with a Retrieval-Augmented Generation (RAG) pipeline to deliver AI-generated soccer insights.
 
 🚀 Features
-
-Team & Squad Database
+🧾 Team & Squad Database
 
 Stores squad information for all Premier League teams in a local SQLite database.
 
-Enables users to view and query team compositions, player details, and positions.
+Displays team compositions, player details, and positions.
 
-Dynamic API Integration
+📡 Dynamic API Integration
 
-Pulls real-time match and ranking data from a live football API.
+Fetches real-time match data and league standings using a live football API.
 
-Displays current standings, fixtures, and game outcomes dynamically.
+Renders current rankings and fixtures dynamically on the frontend.
 
-Soccer Buddy (RAG Module)
+🤖 Soccer Buddy (RAG Module)
 
-The core feature of Soccer Digest.
+Runs daily web scrapes from major soccer news and analytics sites.
 
-Runs daily web scrapes from popular football news and analytics sites.
+Processes scraped data through a LangChain-based RAG system.
 
-Uses LangChain and LLMs to summarize and compile soccer insights.
-
-Employs retrieval-augmented generation (RAG) for contextual, fact-grounded responses.
+Generates AI-powered summaries and insights on ongoing matches.
 
 🧠 Tech Stack
 
 Backend: Django (Python)
 Frontend: HTML, CSS
 Database: SQLite
+
 AI & Data Pipeline:
 
-langchain_community for document loading and vector storage
+LangChain
 
-langchain_text_splitters for text chunking
+Chroma Vector Store
 
-langchain_huggingface for embedding generation
-
-langchain_groq for LLM integration
-
-Chroma as the vector store backend
-
-datetime for scheduling daily scrapes
+Llama 3.1 Model
 
 ⚙️ Installation
 
@@ -72,18 +64,3 @@ python manage.py migrate
 Start the development server
 
 python manage.py runserver
-
-
-Visit http://127.0.0.1:8000/ to view the app.
-
-🧩 Example Workflow (Soccer Buddy)
-
-Web scraper collects daily soccer data (e.g., match reports, analytics).
-
-Data is processed and split using RecursiveCharacterTextSplitter.
-
-Text embeddings are generated using HuggingFaceEmbeddings.
-
-Chroma stores embeddings for semantic retrieval.
-
-Queries are passed through ChatGroq, producing RAG-based summarie
