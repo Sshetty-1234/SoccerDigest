@@ -1,4 +1,4 @@
-⚽ Soccer Digest
+## ⚽ Soccer Digest
 
 Soccer Digest is a Django-based web application that provides up-to-date information about Premier League teams, player squads, and live rankings. It combines a traditional SQLite database with a Retrieval-Augmented Generation (RAG) pipeline to deliver AI-generated soccer insights.
 
