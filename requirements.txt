@@ -1,6 +1,5 @@
 langchain>=0.1.0
-langchain-embeddings-huggingface>=0.0.8
-langchain-groq>=0.0.6
+langchain-huggingface>=1.0.0
 langchain-community>=0.0.5
 langchain-text-splitters>=0.0.5
 python-dotenv>=1.0.0
@@ -8,8 +7,8 @@ chromadb>=0.3.30
 sentence-transformers>=2.2.2
 torch>=2.1.0
 PyPDF2>=3.0.0
-fpdf>=1.7.2
-Django>=4.2.0
-beautifulsoup4>=4.12.2
-requests>=2.31.0
+fpdf
+django
+beautifulsoup4
+requests
 pandas
